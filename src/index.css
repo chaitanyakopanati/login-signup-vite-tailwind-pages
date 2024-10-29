@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .placeholder-style::placeholder {
+       padding: 5px 12px;
+       margin: 5px;
+    }
+    .required {
+        font-weight: bold;
+    }
+    .required:after {
+        color: #e32;
+        content: ' *';
+        display:inline;
+    }
+  }
+  .w-full {
+    width: 100%;
+  }
+  
